@@ -33,14 +33,14 @@ CREATE TABLE `sorsjegy` (
   `ar` int(11) DEFAULT NULL,
   `fonyeremeny` int(11) DEFAULT NULL,
   `nyeresi_esely` double DEFAULT NULL,
-  `kaphato-e_meg?` tinyint(1) DEFAULT 0
+  `kaphato` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- A tábla adatainak kiíratása `sorsjegy`
 --
 
-INSERT INTO `sorsjegy` (`id`, `nev`, `ar`, `fonyeremeny`, `nyeresi_esely`, `kaphato-e_meg?`) VALUES
+INSERT INTO `sorsjegy` (`id`, `nev`, `ar`, `fonyeremeny`, `nyeresi_esely`, `kaphato`) VALUES
 (1, 'Nagykarácsony', 3500, 125, 2, 1),
 (2, 'Kincsvadász', 2000, 75, 3, 1),
 (3, 'Black Jack', 300, 15, 3, 1),
