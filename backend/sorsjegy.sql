@@ -31,7 +31,7 @@ CREATE TABLE `sorsjegy` (
   `id` int(11) NOT NULL,
   `nev` varchar(50) DEFAULT NULL,
   `ar` int(11) DEFAULT NULL,
-  `fonyeremeny_(millio)` int(11) DEFAULT NULL,
+  `fonyeremeny_millio` int(11) DEFAULT NULL,
   `nyeresi_esely` double DEFAULT NULL,
   `kaphato` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -40,7 +40,7 @@ CREATE TABLE `sorsjegy` (
 -- A tábla adatainak kiíratása `sorsjegy`
 --
 
-INSERT INTO `sorsjegy` (`id`, `nev`, `ar`, `fonyeremeny_(millio)`, `nyeresi_esely`, `kaphato`) VALUES
+INSERT INTO `sorsjegy` (`id`, `nev`, `ar`, `fonyeremeny_millio`, `nyeresi_esely`, `kaphato`) VALUES
 (1, 'Nagykarácsony', 3500, 125, 2.88, 0),
 (2, 'Kincsvadász', 2000, 75, 3.08, 1),
 (3, 'Black Jack', 300, 15, 3.01, 1),
