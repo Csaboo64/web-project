@@ -11,10 +11,10 @@ function Layout() {
             <Navbar.Brand href="#home">Sorsjegyek</Navbar.Brand>
             <Nav className="me-auto">
             <Nav.Link href="/">Fooldal</Nav.Link>
-            </Nav>
-            <Outlet></Outlet>    
+            </Nav> 
           </Container>
         </Navbar>
+        <Outlet></Outlet>   
       </>
     );
   }
