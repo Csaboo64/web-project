@@ -33,22 +33,23 @@ CREATE TABLE `sorsjegy` (
   `ar` int(11) DEFAULT NULL,
   `fonyeremeny_millio` int(11) DEFAULT NULL,
   `nyeresi_esely` double DEFAULT NULL,
-  `kaphato` tinyint(1) DEFAULT 0
+  `kaphato` tinyint(1) DEFAULT 0,
+  `keplink` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- A tábla adatainak kiíratása `sorsjegy`
 --
 
-INSERT INTO `sorsjegy` (`id`, `nev`, `ar`, `fonyeremeny_millio`, `nyeresi_esely`, `kaphato`) VALUES
-(1, 'Nagykarácsony', 3500, 125, 2.88, 0),
-(2, 'Kincsvadász', 2000, 75, 3.08, 1),
-(3, 'Black Jack', 300, 15, 3.01, 1),
-(4, 'Nagy meglepetés', 1000, 50, 3.0, 1),
-(5, 'Astro', 300, 10, 3.11, 1),
-(6, 'Afrika', 200, 5, 3.43, 0),
-(7, 'Szalon', 3000, 150, 2.78, 1),
-(8, 'Darts', 1500, 75, 3.06, 1);
+INSERT INTO `sorsjegy` (`id`, `nev`, `ar`, `fonyeremeny_millio`, `nyeresi_esely`, `kaphato`, `keplink`) VALUES
+(1, 'Nagykarácsony', 3500, 125, 2.88, 0, 'Nagykaracsony.png'),
+(2, 'Kincsvadász', 2000, 75, 3.08, 1, 'Kincsvadasz.png'),
+(3, 'Black Jack', 300, 15, 3.01, 1, 'Blackjack.jpg'),
+(4, 'Nagy meglepetés', 1000, 50, 3.0, 1, 'Nagymeglepetes.png'),
+(5, 'Astro', 300, 10, 3.11, 1,'Astro.jpg'),
+(6, 'Afrika', 200, 5, 3.43, 0,'Afrika.jpg'),
+(7, 'Szalon', 3000, 150, 2.78, 1,'Szalon.jpg'),
+(8, 'Darts', 1500, 75, 3.06, 1,'Darts.png');
 
 COMMIT;
 
