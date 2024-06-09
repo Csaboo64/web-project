@@ -41,15 +41,16 @@ CREATE TABLE `sorsjegy` (
 -- A tábla adatainak kiíratása `sorsjegy`
 --
 
-INSERT INTO `sorsjegy` (`id`, `nev`, `ar`, `fonyeremeny_millio`, `nyeresi_esely`, `kaphato`, `keplink`) VALUES
-(1, 'Nagykarácsony', 3500, 125, 2.88, 0, 'Nagykaracsony.png'),
-(2, 'Kincsvadász', 2000, 75, 3.08, 1, 'Kincsvadasz.png'),
-(3, 'Black Jack', 300, 15, 3.01, 1, 'Blackjack.png'),
-(4, 'Nagy meglepetés', 1000, 50, 3.0, 1, 'Nagymeglepetes.png'),
-(5, 'Astro', 300, 10, 3.11, 1,'Astro.jpg'),
-(6, 'Afrika', 200, 5, 3.43, 0,'Afrika.jpg'),
-(7, 'Szalon', 3000, 150, 2.78, 1,'Szalon.jpg'),
-(8, 'Darts', 1500, 75, 3.06, 1,'Darts.png');
+INSERT INTO `sorsjegy` (`id`, `nev`, `ar`, `fonyeremeny_millio`, `nyeresi_esely`, `kaphato`) VALUES
+(1, 'Nagykarácsony', 3500, 125, 2.88, 0),
+(2, 'Kincsvadász', 2000, 75, 3.08, 1),
+(3, 'Black Jack', 300, 15, 3.01, 1),
+(4, 'Nagy meglepetés', 1000, 50, 3.0, 1),
+(5, 'Astro', 300, 10, 3.11, 1),
+(6, 'Afrika', 200, 5, 3.43, 0),
+(7, 'Szalon', 3000, 150, 2.78, 1),
+(8, 'Darts', 1500, 75, 3.06, 1);
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
