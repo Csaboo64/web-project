@@ -12,5 +12,6 @@ export interface Sorsjegyek {
     fonyeremeny_millio: number
     nyeresi_esely: number
     kaphato: boolean
+    keplink: string
   }
   

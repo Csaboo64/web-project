@@ -24,14 +24,13 @@ app.get('/', (req,res)=>{
     res.send('OK')
 });
 app.get('/sorsjegyek', async (req,res)=>{
-    const temp = await db.query('SELECT id, nev, ar, fonyeremeny_millio, nyeresi_esely, kaphato FROM sorsjegy');
+    const temp = await db.query('SELECT id, nev, ar, fonyeremeny_millio, nyeresi_esely, kaphato, keplink FROM sorsjegy');
     const row = temp[0];
     res.send(row)
-
 });
 app.get('/sorsjegyek/:id', async (req,res)=>{
     let sorsjegyId = parseInt(req.params.id);
-    const [rows, fields] = await db.query('SELECT id, nev, ar, fonyeremeny_millio, nyeresi_esely, kaphato FROM sorsjegy WHERE id = ?', [sorsjegyId ]);
+    const [rows, fields] = await db.query('SELECT id, nev, ar, fonyeremeny_millio, nyeresi_esely, kaphato, keplink FROM sorsjegy WHERE id = ?', [sorsjegyId ]);
     if (rows.length == 1){
         res.send(rows[0]);
     } 

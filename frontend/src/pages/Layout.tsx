@@ -8,9 +8,10 @@ function Layout() {
       <>
         <Navbar bg="dark" data-bs-theme="dark">
           <Container>
-            <Navbar.Brand href="#home">Sorsjegyek</Navbar.Brand>
+            <Navbar.Brand href="/">Sorsjegyek</Navbar.Brand>
             <Nav className="me-auto">
-            <Nav.Link href="/">Fooldal</Nav.Link>
+            <Nav.Link href="/">Főoldal</Nav.Link>
+            <Nav.Link href="masik">Leírás</Nav.Link>
             </Nav> 
           </Container>
         </Navbar>
